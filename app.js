@@ -189,7 +189,17 @@ function renderResults(members) {
       <span class="stat-label">Top Milestone</span>
     </div>`;
 
-   document.getElementById('print-date').textContent =
+  const container = document.getElementById('milestones-container');
+  container.innerHTML = '';
+  if (sortedGroups.length === 0) {
+    container.innerHTML = '<div class="empty-state">No members have reached a milestone yet (minimum 10 classes required).</div>';
+  } else {
+    for (const [milestone, list] of sortedGroups) {
+      container.appendChild(renderMilestoneSection(milestone, list));
+    }
+  }
+
+  document.getElementById('print-date').textContent =
     `Printed ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`;
 
   document.getElementById('loading-state').classList.add('hidden');
