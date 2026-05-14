@@ -1,0 +1,568 @@
+/* ═══════════════════════════════════════════════
+   UNRIVALED FITNESS — Member Milestones Tracker
+   Color palette: Black · White · Gold
+═══════════════════════════════════════════════ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold:        #D4AF37;
+  --gold-bright: #F0D060;
+  --gold-dark:   #A08820;
+  --gold-muted:  #7A6415;
+  --gold-dim:    rgba(212, 175, 55, 0.08);
+  --gold-glow:   rgba(212, 175, 55, 0.25);
+
+  --black:       #0A0A0A;
+  --surface:     #131313;
+  --surface-2:   #1B1B1B;
+  --surface-3:   #242424;
+  --border:      #2C2C2C;
+  --border-soft: #222222;
+
+  --white:       #FFFFFF;
+  --off-white:   #EFEFEF;
+  --text-dim:    #AAAAAA;
+  --text-muted:  #666666;
+
+  --radius:      10px;
+  --radius-sm:   6px;
+  --shadow:      0 4px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* ── Base ─────────────────────────────────────── */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden { display: none !important; }
+
+/* ── Header ───────────────────────────────────── */
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 2px solid var(--gold);
+  padding: 1.25rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  text-align: left;
+}
+
+.header-logo {
+  width: 42px;
+  height: 42px;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.gym-name {
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.page-subtitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+/* ── Main Layout ──────────────────────────────── */
+
+.main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 4rem;
+  width: 100%;
+}
+
+/* ── Upload Section ───────────────────────────── */
+
+.upload-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.upload-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 3rem 2.5rem;
+  max-width: 580px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.upload-icon-wrap {
+  color: var(--gold-muted);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.upload-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.upload-desc {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.upload-desc code {
+  background: var(--surface-3);
+  color: var(--gold);
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85em;
+}
+
+.drop-zone {
+  border: 2px dashed var(--gold-muted);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  margin-bottom: 1.25rem;
+  outline: none;
+}
+
+.drop-zone:hover,
+.drop-zone:focus,
+.drop-zone.drag-active {
+  border-color: var(--gold);
+  background: var(--gold-dim);
+}
+
+.drop-primary {
+  color: var(--off-white);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.drop-sep {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin: 0.75rem 0;
+}
+
+.drop-formats {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+.upload-error {
+  background: rgba(220, 60, 60, 0.1);
+  border: 1px solid rgba(220, 60, 60, 0.35);
+  color: #FF7070;
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.upload-hint {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.upload-hint code {
+  color: var(--text-dim);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ── Buttons ──────────────────────────────────── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.65rem 1.6rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: none;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--black);
+}
+.btn-gold:hover { background: var(--gold-bright); }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--gold-muted);
+  color: var(--gold);
+}
+.btn-outline:hover {
+  border-color: var(--gold);
+  background: var(--gold-dim);
+}
+
+/* ── Results Section ──────────────────────────── */
+
+.results-section { }
+
+.results-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.results-heading {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.results-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.print-header {
+  display: none;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.print-date {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+/* ── Stats Bar ────────────────────────────────── */
+
+.stats-bar {
+  display: flex;
+  align-items: stretch;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 110px;
+  padding: 0.25rem 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 0.35rem;
+  text-align: center;
+}
+
+.stat-divider {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+  flex: none;
+  margin: 0 0.25rem;
+}
+
+/* ── Milestone Sections ───────────────────────── */
+
+.milestones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.milestone-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Gold left-accent strip — thicker for bigger milestones */
+.milestone-section { border-left: 4px solid var(--gold-muted); }
+.milestone-section.tier-2  { border-left-color: var(--gold-dark); }
+.milestone-section.tier-3  { border-left-color: var(--gold); }
+.milestone-section.tier-4  { border-left-color: var(--gold-bright); }
+.milestone-section.tier-5  { border-left-color: var(--white); }
+
+.milestone-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border-soft);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.milestone-badge {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.milestone-number {
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--gold);
+}
+.milestone-section.tier-4 .milestone-number { color: var(--gold-bright); }
+.milestone-section.tier-5 .milestone-number { color: var(--white); }
+
+.milestone-word {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.milestone-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.milestone-count {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  background: var(--surface-3);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+/* ── Member Grid ──────────────────────────────── */
+
+.member-grid {
+  padding: 1rem 1.5rem 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.25rem 0.75rem;
+}
+
+.member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.45rem 0.6rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.12s;
+}
+
+.member-item:hover { background: var(--surface-2); }
+
+.member-name {
+  font-size: 0.92rem;
+  color: var(--off-white);
+  font-weight: 400;
+}
+
+.member-visits {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* ── No-milestone note ────────────────────────── */
+
+.no-milestone-note {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  line-height: 1.6;
+}
+
+/* ── Empty state ──────────────────────────────── */
+
+.empty-state {
+  text-align: center;
+  color: var(--text-dim);
+  padding: 3rem 1rem;
+  font-size: 1rem;
+}
+
+/* ── Footer ───────────────────────────────────── */
+
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 1.1rem 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+
+/* ══════════════════════════════════════════════
+   PRINT STYLES
+══════════════════════════════════════════════ */
+
+@media print {
+  :root {
+    --black: #FFFFFF;
+    --surface: #FFFFFF;
+    --surface-2: #F5F5F5;
+    --surface-3: #EEEEEE;
+    --border: #CCCCCC;
+    --border-soft: #DDDDDD;
+    --white: #000000;
+    --off-white: #111111;
+    --text-dim: #444444;
+    --text-muted: #777777;
+    --gold: #8a6f00;
+    --gold-bright: #8a6f00;
+    --gold-dim: #F9F3DC;
+  }
+
+  body { background: white; color: black; }
+
+  .site-header {
+    position: static;
+    border-bottom: 2px solid #8a6f00;
+  }
+
+  .gym-name { color: #8a6f00; }
+  .page-subtitle { color: #555; }
+  .header-logo { color: #8a6f00; }
+
+  .no-print { display: none !important; }
+
+  .print-header {
+    display: block;
+  }
+
+  .main { padding: 1rem 0; }
+
+  .milestone-section {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    margin-bottom: 0.75rem;
+    page-break-inside: avoid;
+  }
+
+  .milestone-number { color: #8a6f00 !important; }
+  .milestone-section.tier-4 .milestone-number { color: #8a6f00 !important; }
+  .milestone-section.tier-5 .milestone-number { color: #000 !important; }
+
+  .member-item:hover { background: none; }
+
+  .site-footer { display: none; }
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .gym-name { font-size: 1.25rem; letter-spacing: 0.2em; }
+  .main { padding: 2rem 1rem 3rem; }
+  .upload-card { padding: 2rem 1.25rem; }
+  .milestone-number { font-size: 1.6rem; }
+  .member-grid { grid-template-columns: 1fr 1fr; }
+  .stats-bar { padding: 0.9rem 1rem; }
+}
+
+@media (max-width: 480px) {
+  .gym-name { font-size: 1rem; letter-spacing: 0.12em; }
+  .header-logo { width: 30px; height: 30px; }
+  .member-grid { grid-template-columns: 1fr; }
+  .results-top { flex-direction: column; align-items: flex-start; }
+  .stat-value { font-size: 1.5rem; }
+}
