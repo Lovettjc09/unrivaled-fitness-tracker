@@ -175,11 +175,6 @@ function renderResults(members) {
 
   document.getElementById('stats-bar').innerHTML = `
     <div class="stat">
-      <span class="stat-value">${fmt(members.length)}</span>
-      <span class="stat-label">Total Members</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
       <span class="stat-value">${fmt(achieverCount)}</span>
       <span class="stat-label">Milestone Achievers</span>
     </div>
