@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Milestones — Unrivaled Fitness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <svg class="header-logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect x="2" y="16" width="8" height="8" rx="2" fill="currentColor"/>
+          <rect x="30" y="16" width="8" height="8" rx="2" fill="currentColor"/>
+          <rect x="10" y="12" width="6" height="16" rx="2" fill="currentColor"/>
+          <rect x="24" y="12" width="6" height="16" rx="2" fill="currentColor"/>
+          <rect x="16" y="18" width="8" height="4" rx="1" fill="currentColor"/>
+        </svg>
+        <div>
+          <h1 class="gym-name">UNRIVALED FITNESS</h1>
+          <p class="page-subtitle">Member Milestones Tracker</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ── Upload Section ──────────────────────────────────────────── -->
+    <section id="upload-section" class="upload-section">
+      <div class="upload-card">
+
+        <div class="upload-icon-wrap" aria-hidden="true">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 16 12 12 8 16"/>
+            <line x1="12" y1="12" x2="12" y2="21"/>
+            <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/>
+          </svg>
+        </div>
+
+        <h2 class="upload-title">Upload Member Data</h2>
+        <p class="upload-desc">
+          Export a client visit report from MindBody as a CSV and upload it below.
+          Your file must include a <code>Total Visits</code> column and a member name column.
+        </p>
+
+        <div id="drop-zone" class="drop-zone" role="button" tabindex="0" aria-label="Drop CSV file here or click to browse">
+          <p class="drop-primary">Drag &amp; drop your CSV file here</p>
+          <p class="drop-sep">— or —</p>
+          <label for="file-input" class="btn btn-gold">Browse Files</label>
+          <input type="file" id="file-input" accept=".csv,.txt" hidden>
+          <p class="drop-formats">Accepts .csv files</p>
+        </div>
+
+        <div id="upload-error" class="upload-error hidden" role="alert"></div>
+
+        <p class="upload-hint">
+          Expected columns: <code>Name</code> <em>or</em> <code>First Name</code> + <code>Last Name</code>, plus <code>Total Visits</code>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Results Section ─────────────────────────────────────────── -->
+    <section id="results-section" class="results-section hidden" aria-live="polite">
+
+      <div class="results-top no-print">
+        <h2 class="results-heading">Milestone Achievements</h2>
+        <div class="results-actions">
+          <button class="btn btn-outline" onclick="window.print()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+              <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+            Print
+          </button>
+          <button id="new-upload-btn" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/>
+              <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/>
+            </svg>
+            New Upload
+          </button>
+        </div>
+      </div>
+
+      <div class="print-header">
+        <p class="print-date" id="print-date"></p>
+      </div>
+
+      <div id="stats-bar" class="stats-bar no-print"></div>
+
+      <div id="milestones-container" class="milestones-container"></div>
+
+      <p id="no-milestone-note" class="no-milestone-note hidden"></p>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Unrivaled Fitness &copy; <span id="footer-year"></span> &bull; Member Milestones Tracker</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
