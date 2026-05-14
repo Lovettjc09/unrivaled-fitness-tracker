@@ -199,14 +199,6 @@ function renderResults(members) {
     }
   }
 
-  const note = document.getElementById('no-milestone-note');
-  if (noMilestone.length > 0) {
-    note.textContent = `${fmt(noMilestone.length)} member${noMilestone.length !== 1 ? 's have' : ' has'} not yet reached their first milestone (10 classes).`;
-    note.classList.remove('hidden');
-  } else {
-    note.classList.add('hidden');
-  }
-
   document.getElementById('print-date').textContent =
     `Printed ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`;
 
