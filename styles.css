@@ -173,12 +173,6 @@ body {
   line-height: 1;
 }
 
-.btn-gold {
-  background: var(--gold);
-  color: var(--black);
-}
-.btn-gold:hover { background: var(--gold-bright); }
-
 .btn-outline {
   background: transparent;
   border: 1px solid var(--gold-muted);
@@ -371,18 +365,6 @@ body {
   transition: background 0.12s;
 }
 
-/* ── No-milestone note ────────────────────────── */
-
-.no-milestone-note {
-  text-align: center;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  margin-top: 2rem;
-  padding: 1rem 1.5rem;
-  border: 1px solid var(--border-soft);
-  border-radius: var(--radius);
-  line-height: 1.6;
-}
 .member-item:hover { background: var(--surface-2); }
 
 .member-name {
@@ -483,7 +465,6 @@ body {
 @media (max-width: 768px) {
   .gym-name { font-size: 1.25rem; letter-spacing: 0.2em; }
   .main { padding: 2rem 1rem 3rem; }
-  .upload-card { padding: 2rem 1.25rem; }
   .milestone-number { font-size: 1.6rem; }
   .member-grid { grid-template-columns: 1fr 1fr; }
   .stats-bar { padding: 0.9rem 1rem; }
