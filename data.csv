@@ -1,42 +1,367 @@
-Client, Total Visits
-Ruth Siegfried, 1
-Joshua Cline, 8
-Matthew Boettcher, 8
-Athena Beckwith, 15
-David Lloyd, 17
-Aubrey Decker,	18
-Rachel McCabe, 19
-Adrianna Baker, 61
-Ansley Adams, 64
-Tanner Smith, 69
-Anna Fortier, 72
-Brittany Freeman, 78
-Megan Sayer, 85
-Ariel Mazur, 119
-Andrew Kline, 124
-Alexandra Sadler, 125
-Celeste Negrete, 136
-Nichol Gregory, 140
-Sarah Day, 146
-Becca Kilroy, 148
-Christine Hunt, 150
-Laila Juarez, 168
-Courtney Pope, 168
-Ashlee King, 207
-Kacie Sholty, 228
-Wesley Lape, 241
-Ashley Winkler, 243
-Jorden Tyler, 327
-Karly Mckenna, 351
-Lynn Wolf, 373
-Rebekah Waller, 438
-Kristen Buice, 508
-Hailey Paschal, 550
-Desiree Sistare, 551
-Erin Kramer, 666
-Faith Barber, 763
-Lisa Foremam, 850
-Meghan Blume, 948
-Keri McGee, 990
-Karen Tempel, 1261
-Jill Munn, 1289
+Last Name,First Name,Last Visit,# Visits,Client Status
+Flanagan,Anna,5/17/2026,343,Active
+Lovett,Kelsey,5/17/2026,333,Active
+Nelson,Nikki,5/17/2026,200,Active
+Fortier,Anna,5/16/2026,74,Active
+Freeman,Brittany,5/16/2026,80,Active
+Gregory,Nichol,5/16/2026,143,Active
+Juarez,Laila,5/16/2026,169,Active
+Magnuson,Angela,5/16/2026,45,Active
+Mueller,Mark,5/16/2026,110,Active
+Negrete,Celeste,5/16/2026,138,Active
+Poreda,Samantha,5/16/2026,18,Active
+Royals,Brittany,5/16/2026,656,Active
+Beaumont,Paul,5/15/2026,1117,Active
+Boettcher,Matthew,5/15/2026,9,Active
+Davis,Jenna,5/15/2026,3,Active
+Ennis,Asia,5/15/2026,116,Active
+Fluharty,Jessie,5/15/2026,1229,Active
+Foremam,Lisa,5/15/2026,852,Active
+Galvan,Kristen,5/15/2026,589,Active
+Jimenez,Juliana,5/15/2026,415,Active
+Karol,Bridgett,5/15/2026,421,Active
+Kline,Andrew,5/15/2026,126,Active
+Mazur,Ariel,5/15/2026,120,Active
+McIntosh,Chasitie,5/15/2026,169,Active
+Mckenna,Karly,5/15/2026,353,Active
+Munn,Jill,5/15/2026,1291,Active
+Pajitnykh,Cassidy,5/15/2026,2,Active
+Parrish,Kimberly,5/15/2026,35,Active
+Powell,Ada,5/15/2026,205,Active
+Powell,Alison,5/15/2026,310,Active
+Reda,Jennifer,5/15/2026,160,Active
+Robinson,Becky,5/15/2026,287,Active
+Sowards,Kathy,5/15/2026,63,Active
+Sowards,Stephen,5/15/2026,14,Active
+Tempel,Karen,5/15/2026,1263,Active
+Waller,Rebekah,5/15/2026,440,Active
+Williamson,Jessica,5/15/2026,213,Active
+Williamson,Mary,5/15/2026,250,Active
+Winkler,Ashley,5/15/2026,244,Active
+Adams,Ansley,5/14/2026,64,Active
+Arico,Avery,5/14/2026,30,Active
+Beaulac,Tim,5/14/2026,312,Active
+Blume,Meghan,5/14/2026,949,Active
+Buice,Kristen,5/14/2026,509,Active
+Crane,Lara,5/14/2026,279,Active
+Decker,Michael,5/14/2026,483,Active
+Gardner,Caroline,5/14/2026,28,Active
+GODIN,LESLIA,5/14/2026,432,Active
+Greenshields,Dorothy,5/14/2026,85,Active
+Gunther,Kristian,5/14/2026,9,Active
+Hunt,Christine,5/14/2026,151,Active
+Kilroy,Becca,5/14/2026,149,Active
+Lape,Wesley,5/14/2026,242,Active
+Lloyd,David,5/14/2026,18,Active
+Machado,Kissila,5/14/2026,75,Active
+McGee,Keri,5/14/2026,992,Active
+O'Banion,Sebastian,5/14/2026,199,Active
+Recher,Michelle,5/14/2026,4,Active
+Riley,Dan,5/14/2026,326,Active
+Sayer,Megan,5/14/2026,85,Active
+Temple,Kevin,5/14/2026,579,Active
+Waller,Brandon,5/14/2026,78,Active
+Williamson,Tanner,5/14/2026,530,Active
+Winkler,Vincent,5/14/2026,253,Active
+X,Lowspeedoperator,5/14/2026,417,Active
+Bayer,Meghan,5/13/2026,11,Active
+Hammond,Kelsey,5/13/2026,335,Active
+Osteen,Jacque,5/13/2026,222,Active
+Parrish,Michael,5/13/2026,105,Active
+Peepeles,Alex,5/13/2026,91,Active
+Pope,Courtney,5/13/2026,168,Active
+Rivers,Emma,5/13/2026,159,Active
+Waclawik,Tara,5/13/2026,247,Active
+Wolf,Lynn,5/13/2026,373,Active
+George,James,5/12/2026,46,Active
+Bryce,Alissa,5/11/2026,16,Active
+Garcia Lebron,Miliangelis,5/11/2026,1,Active
+Majidi,Jeanne,5/11/2026,329,Active
+Moreira da silva,Ana Paula,5/11/2026,3,Active
+Rosier,Coleson,5/11/2026,98,Active
+Sadler,Alexandra,5/11/2026,125,Active
+Servelin,Ana Paula,5/11/2026,26,Active
+Uechtritz,Olivia,5/11/2026,1,Active
+Baker,Adrianna,5/9/2026,61,Active
+Johnson,Annastacia,5/9/2026,24,Active
+Mixon,Bonnie,5/9/2026,17,Inactive
+Rhinehart,Maria,5/8/2026,98,Active
+Lamborn,Trevor,5/7/2026,51,Active
+Mccarthy,Eleshia,5/7/2026,97,Active
+Meyer,Emily,5/7/2026,2,Active
+Sharpe,Misty,5/7/2026,250,Active
+Siegfried,Ruth,5/7/2026,1,Active
+Sistare,Desiree,5/7/2026,551,Active
+Uvalle,Hayley,5/7/2026,5,Active
+Barber,Faith,5/6/2026,763,Active
+Brissey,Anna,5/6/2026,473,Active
+Ennis,Dustin,5/6/2026,61,Active
+Leita,Stacy,5/6/2026,497,Active
+Tyler,Jorden,5/6/2026,327,Active
+Howle,Emalie,5/5/2026,219,Active
+Martinez,Sophia,5/5/2026,23,Active
+Mccarthy,Haidyn,5/5/2026,26,Active
+Paschal,Hailey,5/5/2026,550,Active
+Roper,Julie,5/5/2026,431,Active
+Belle,Jvonne,5/4/2026,481,Active
+Cruse,Grayson,5/4/2026,74,Active
+lexywilliams90,Alexandria,5/4/2026,6,Active
+Schulte,Megan,5/4/2026,634,Active
+Smith,Tanner,5/4/2026,69,Active
+Swearingen,Cameron,5/4/2026,97,Active
+Swearingen,Natalie,5/4/2026,4,Active
+Baker,Molly,5/3/2026,3,Active
+Wood,Maggie,5/3/2026,17,Active
+Wood,Taylor,5/3/2026,214,Active
+Travis,Katie,5/2/2026,96,Active
+Day,Sarah,4/30/2026,146,Active
+Wilburn,Brittany,4/30/2026,44,Active
+Bolen,Josh,4/28/2026,24,Active
+Lawson,William,4/27/2026,16,Active
+V,K,4/27/2026,10,Active
+Shaffer,Amanda,4/26/2026,1,Active
+Taylor,Branson,4/25/2026,225,Active
+Beckwith,Athena,4/24/2026,15,Active
+Shaheen,Usman,4/23/2026,2,Active
+Farrell,Shannon,4/22/2026,405,Active
+Kramer,Erin,4/22/2026,666,Active
+Puckett,Abbi,4/20/2026,149,Active
+Powell,Chris,4/18/2026,12,Active
+Abney,Brooke,4/17/2026,26,Active
+Hilton,Daniel,4/17/2026,217,Active
+Wegner,Emily,4/16/2026,212,Active
+King,Ashlee,4/15/2026,207,Active
+Sullivan,Kathleen,4/15/2026,61,Active
+Smith,Brett,4/14/2026,47,Active
+Warren-Foley,Brooke,4/13/2026,1,Active
+Adams,Susie,4/10/2026,307,Active
+Foster,Mae,4/9/2026,49,Active
+Johnson,Jessica,4/8/2026,431,Active
+Argenti,Chante,4/4/2026,9,Active
+Gleaton,Jessica,4/4/2026,6,Active
+Goetzman,Chelsea,4/4/2026,2,Active
+Linares,Bryant,4/4/2026,322,Active
+Bullets,Eileen,4/2/2026,70,Active
+Ortner,Nicole,4/1/2026,19,Active
+Pomeroy,Marion,4/1/2026,24,Active
+Riemer,Megan,3/29/2026,1,Active
+Sheridan,Arwen,3/29/2026,1,Active
+Plumb,Hugh,3/25/2026,3,Active
+Risso,Erin,3/25/2026,13,Active
+Riley,Christopher,3/23/2026,87,Active
+Harrington,Erika,3/21/2026,178,Active
+Minichan,Katie,3/20/2026,2,Active
+Barry,Mary,3/19/2026,5,Active
+Reardon,Marianne,3/19/2026,6,Active
+Haggerty,Georgy,3/15/2026,1,Active
+Hodges,Natalie,3/15/2026,10,Active
+Massotti,Isabella,3/15/2026,2,Active
+Wood,Vivian,3/15/2026,1,Active
+Braithwaite,Jennifer,3/14/2026,169,Active
+Greenshields,Helena,3/13/2026,7,Active
+Blume,Todd,3/11/2026,333,Active
+Dicks,Vivian,3/11/2026,115,Active
+Shoaf,Ryan,3/11/2026,16,Active
+Waldo,Braylen,3/11/2026,14,Active
+Brown,Alexis,3/9/2026,15,Active
+Birr,Cameran,3/7/2026,354,Active
+Foster,Dustin,3/7/2026,7,Active
+Fowler,Dejason,3/7/2026,23,Active
+Pearrow,Savannah,3/7/2026,3,Active
+Messick,Martha,3/6/2026,157,Active
+Sims,Mandy,3/6/2026,537,Active
+Plumb,Cassandra,3/4/2026,22,Active
+Silliman,Caitlin,3/4/2026,37,Active
+Waters,April,3/1/2026,7,Active
+Arbaugh,Sydney,2/28/2026,130,Inactive
+Selmayr,Barbara,2/26/2026,2,Active
+Lee,Syaney,2/25/2026,1,Active
+Ortner,Bryan,2/25/2026,7,Active
+Staffors,Matt,2/25/2026,11,Active
+Bridges,Ashby,2/24/2026,1,Active
+Haltom,Devin,2/23/2026,112,Active
+Fielder,Leslie,2/22/2026,250,Active
+Blume,Buddy,2/21/2026,410,Active
+Campbell,Emily,2/20/2026,1,Active
+Jordan,Kamesha,2/20/2026,12,Active
+Hadden,Amy,2/17/2026,2,Active
+Neeley,Chris,2/17/2026,48,Active
+Yon-Neeley,Tammy,2/17/2026,193,Active
+Hough,Denise,2/14/2026,97,Active
+Sharpe,Logan,2/14/2026,1,Active
+Decker,Audrey,2/13/2026,18,Active
+Creaswell,Karen,2/12/2026,2,Active
+Blume,Amber,2/11/2026,193,Active
+Moler,Andrew,2/11/2026,30,Active
+Lovett,Joshua,2/9/2026,88,Active
+Rogers,Jennifer,2/9/2026,7,Active
+Arredondo tuna,Wendy johana,2/7/2026,1,Active
+Calhoun,Kadeem,2/7/2026,14,Active
+Fluharty,Lily,2/7/2026,5,Active
+Plumb,Hugh,2/5/2026,19,Active
+Ran,Erik,2/5/2026,1,Active
+Kirkpatrick,Jennifer,2/4/2026,547,Active
+Lindroth,Isabella,2/4/2026,3,Active
+Graham,Ruthie,2/3/2026,137,Active
+Quigley,Andrew,2/3/2026,125,Active
+Bolen,Brittany,2/2/2026,149,Active
+Lechliter,Ali,1/31/2026,1,Active
+Patel,Kruti,1/30/2026,3,Active
+Berkheimer,Phyllis,1/29/2026,1,Active
+Buchert,Mark,1/29/2026,19,Active
+Martin,Emily,1/29/2026,11,Active
+Pittman,Ciara,1/28/2026,11,Active
+Reda,Thadeus,1/28/2026,3,Active
+Dickau,David,1/26/2026,59,Active
+Williams,Precious,1/26/2026,1,Active
+Swearingen,John,1/20/2026,102,Active
+Swearingen,Selena,1/20/2026,104,Active
+Freeman,Pammie,1/19/2026,4,Active
+Macedonia,Anna,1/18/2026,6,Active
+Smith,Rosey,1/17/2026,1,Active
+Stafford,Virginia,1/17/2026,17,Active
+Safford,Stephanie,1/16/2026,29,Active
+Heydt,Randi,1/15/2026,4,Active
+Warren,Heather,1/15/2026,1,Active
+Quartararo,Brianna,1/14/2026,4,Active
+Garmon,Natalie,1/12/2026,2,Active
+Sholty,Kacie,1/12/2026,228,Active
+Morse,Stephanie,1/9/2026,27,Active
+Blando,Federico,1/7/2026,35,Active
+Grinkley,Marie,1/7/2026,108,Active
+Bradford,Graceb,1/3/2026,16,Active
+Bradford,Karen,1/3/2026,31,Active
+Godbee,Ava,1/1/2026,2,Active
+Harris,Maggie,12/31/2025,15,Active
+Hilton,Edwin,12/11/2025,6,Active
+Goodwin,Erica,12/9/2025,44,Active
+Matthews,Richard,12/8/2025,2,Active
+Knott,Lindsay,12/6/2025,3,Active
+Burkhart,Meredith,12/5/2025,1,Active
+Leonard,Ashley,12/4/2025,19,Active
+Platte,William,12/4/2025,1,Active
+Safford,William,12/2/2025,3,Active
+Chavous,Erica,12/1/2025,5,Active
+Corcoran,Kelli,11/29/2025,1,Active
+Robinson,Brandon,11/29/2025,1,Active
+Bastia,Sasha,11/25/2025,8,Active
+Powell,Grayson,11/21/2025,2,Active
+Shoaf,Colleen,11/21/2025,3,Active
+Stockdale,Sharon,11/20/2025,37,Active
+Smith,Kennedy,11/17/2025,2,Active
+Crain,Brad,11/15/2025,4,Active
+Knott,Lindsay,11/11/2025,1,Active
+Welch,Olivia,11/10/2025,280,Active
+Adams,Tara,11/9/2025,1,Active
+Clark,Lexie,11/9/2025,1,Active
+Fisher,George,11/8/2025,3,Active
+Grant,Dina,11/8/2025,1,Active
+Gregory,Regan,11/8/2025,2,Active
+Cline,Joshua,11/3/2025,8,Active
+Basco,Brenda,10/30/2025,17,Active
+Holmes,Savannah,10/30/2025,2,Active
+Trippi,Kimberly,10/24/2025,246,Active
+Hilton,Ally,10/23/2025,57,Active
+Lovitt,Aymie,10/23/2025,101,Active
+Stockdale,Samuel,10/18/2025,1,Active
+O'Banion,madison,10/15/2025,190,Active
+ROYALS,MADELYN,10/12/2025,4,Active
+Hanna,Samar,10/11/2025,14,Active
+Boris,Lindsay,10/9/2025,1,Active
+Taylor,Samantha,10/7/2025,147,Active
+Tuberville,Tracey,10/3/2025,1,Active
+Marshall,Lisa,9/30/2025,117,Active
+McCarthy,Ian,9/30/2025,1,Active
+Christian,Toquetta,9/28/2025,113,Active
+Christian,Toquetta,9/28/2025,2,Active
+Lancer,Amy,9/28/2025,1,Active
+Murray,Melissa,9/23/2025,1,Active
+Williams,Kadeja,9/23/2025,1,Active
+Parameter,Denise,9/21/2025,4,Active
+Lark,Amanda,9/20/2025,2,Active
+Brown,Jessica,9/17/2025,3,Active
+Hammond,Julie,9/17/2025,66,Active
+Newton,Mikayla,9/15/2025,1,Active
+Summit,Megan,9/13/2025,14,Active
+Lanier,Leah,9/10/2025,5,Active
+Gantt,Nicole,9/9/2025,12,Active
+Camera,Kim,9/7/2025,11,Active
+Mazzell,Monica,9/2/2025,121,Active
+Cushman,Will,9/1/2025,1,Active
+DeHaven,Brandi,9/1/2025,77,Active
+Freeman,Debbie,9/1/2025,154,Active
+Siler,Jennifer,9/1/2025,1,Active
+Tempel,Greg,9/1/2025,2,Active
+Tempel,Kristi,9/1/2025,4,Active
+Johnson,Constance,8/27/2025,88,Active
+Powell,Grayson,8/27/2025,3,Active
+Gregory,Ryan,8/26/2025,4,Active
+Hills,Chyna,8/26/2025,68,Active
+Peay,Caroline,8/26/2025,49,Active
+Peay,Christina,8/26/2025,48,Active
+Pierce,Dominic,8/21/2025,9,Active
+Daddario,Joe,8/5/2025,453,Active
+Mazzell,Haley,8/4/2025,124,Active
+Pierce,Olivia,8/1/2025,4,Active
+Torres,Lynnsey,7/31/2025,19,Active
+Crane,Avery,7/28/2025,15,Active
+Menden,Anastasia,7/22/2025,5,Active
+Mitchell,Carey,7/21/2025,7,Active
+Harrelson,Bennett,7/19/2025,210,Active
+Harrelson,Lindsay,7/19/2025,1,Active
+Sadler,Ally,7/19/2025,1,Active
+Alimo,Amy,7/18/2025,2,Active
+Anderson,Brandi,7/17/2025,1,Active
+Hales,Angela,7/17/2025,35,Active
+Pierce,Donna,7/17/2025,1,Active
+Dameron,Kim,7/16/2025,1,Active
+Asbell,Jenifer,7/7/2025,169,Active
+Hall,Rebecca,7/7/2025,144,Active
+Young,Sage,6/27/2025,1,Active
+Chisholm,Tuesday,6/26/2025,35,Active
+Oerman,Carleigh,6/26/2025,1,Active
+Gore,DeAnna,6/25/2025,25,Active
+Ryan,Faith,6/25/2025,30,Active
+Gutman,Deanna,6/23/2025,3,Active
+Rogers,Brooke,6/21/2025,109,Active
+Shufelt,Bobbiann,6/18/2025,26,Active
+Stafford,Virginia,6/18/2025,4,Active
+Fennig,Madelyne,6/17/2025,1,Active
+Harby,Vickie,6/13/2025,112,Active
+Handley,Nikki,6/10/2025,142,Active
+Brinkley,Dani,6/9/2025,1,Active
+Buff,Hunter,6/9/2025,11,Active
+Palmer,Macy,6/7/2025,1,Active
+Johnson,Sarah Grace,6/4/2025,1,Active
+Snipes,Laurie,6/4/2025,58,Active
+Bailey,Skylar,6/2/2025,20,Active
+Wood,Ginny,6/2/2025,134,Active
+McCabe,Rachel,5/30/2025,19,Active
+Travis,Dakota,5/30/2025,1,Active
+Candelaria,Tahni,5/29/2025,15,Active
+Williams,Kimberly,5/29/2025,1,Active
+Cook,Amanda,5/27/2025,88,Active
+Smith,Taylor,5/27/2025,41,Inactive
+Harrelson,Lindsay,5/26/2025,173,Active
+Howle,Adam,5/26/2025,2,Active
+Pittman,Benton,5/26/2025,2,Active
+Bauman,Mary Kathryn,5/24/2025,1,Active
+Edwards,Phil,5/24/2025,9,Active
+Sexton,Autumn,5/23/2025,102,Active
+Wade,Chelsea,5/21/2025,27,Active
+Lawless,Bailey,5/20/2025,364,Active
+Lawless,Kaitlyn,5/20/2025,276,Active
+Sanchez,Eny,5/20/2025,1,Active
+Saxon,Meredith,5/17/2025,4,Active
+Harby,Jack,5/16/2025,109,Active
+Jackson,Britt,5/16/2025,42,Active
+Jones,Leah,5/16/2025,4,Active
+Willis,LaShandia,5/16/2025,5,Inactive
+Harper,Joy,5/15/2025,1,Active
+Huffer,Jessica,5/10/2025,1,Active
+Waters,April,5/7/2025,3,Active
+Johnson,Stephanie,5/6/2025,73,Active
+Kelly,Lesley,5/6/2025,26,Active
+Rumbaugh,Marilyn,5/6/2025,2,Active
+Wofford,Julia,5/6/2025,125,Active
+Klimenko,Aleks,5/5/2025,2,Active
