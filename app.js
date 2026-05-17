@@ -72,18 +72,21 @@ function parseCSV(rawText) {
   const headers = parseCSVLine(lines[0]);
 
   const visitsIdx = findColumnIndex(headers, [
-    'total visits', 'totalvisits', 'visits', 'total classes',
+    'total visits', 'totalvisits', '# visits', '#visits', 'visits', 'total classes',
     'class count', 'attendance count', 'attendance',
   ]);
   if (visitsIdx === -1) throw new Error(
     `No "Total Visits" column found in data.csv. Detected: ${headers.join(', ')}`
   );
 
-  const fullNameIdx  = findColumnIndex(headers, ['client name', 'member name', 'full name', 'name', 'client']);
   const firstNameIdx = findColumnIndex(headers, ['first name', 'firstname', 'first']);
   const lastNameIdx  = findColumnIndex(headers, ['last name', 'lastname', 'surname', 'last']);
+  const hasSplitName = firstNameIdx !== -1 && lastNameIdx !== -1;
 
-  if (fullNameIdx === -1 && (firstNameIdx === -1 || lastNameIdx === -1)) {
+  // Only look for a single full-name column if separate first/last columns weren't found
+  const fullNameIdx = hasSplitName ? -1 : findColumnIndex(headers, ['client name', 'member name', 'full name', 'name', 'client']);
+
+  if (!hasSplitName && fullNameIdx === -1) {
     throw new Error(`No name column found in data.csv. Detected: ${headers.join(', ')}`);
   }
 
@@ -93,12 +96,12 @@ function parseCSV(rawText) {
     const row = parseCSVLine(lines[i]);
 
     let name = '';
-    if (fullNameIdx !== -1) {
-      name = (row[fullNameIdx] ?? '').trim();
-    } else {
+    if (hasSplitName) {
       const first = (row[firstNameIdx] ?? '').trim();
       const last  = (row[lastNameIdx]  ?? '').trim();
       name = [first, last].filter(Boolean).join(' ');
+    } else {
+      name = (row[fullNameIdx] ?? '').trim();
     }
 
     if (!name) continue;
